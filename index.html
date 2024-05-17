@@ -50,11 +50,6 @@
         #resultado {
             margin-top: 20px;
             font-weight: bold;
-            display: none; /* Ocultar o resultado por padrão */
-        }
-
-        .show {
-            display: block; /* Mostrar o resultado quando a classe 'show' for aplicada */
         }
     </style>
 </head>
@@ -71,8 +66,9 @@
     <input type="number" id="sum_escanteios_h2h_5" name="sum_escanteios_h2h_5" min="0"><br>
     
     <button type="button" onclick="verificarUnder13()">Verificar</button>
-    <div id="resultado"></div>
 </form>
+
+<div id="resultado"></div>
 
 <script>
 function verificarUnder13() {
@@ -91,8 +87,6 @@ function verificarUnder13() {
     } else {
         resultadoDiv.textContent = "Não cabe under 13";
     }
-    
-    resultadoDiv.classList.add('show'); // Mostrar o resultado
 }
 </script>
 
